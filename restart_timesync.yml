@@ -1,0 +1,9 @@
+---
+- name: restart timesync
+  hosts: all
+  tasks:
+  - name: restart timesync service 
+    become: true
+    systemd: 
+      name: systemd-timesyncd
+      state: restarted
