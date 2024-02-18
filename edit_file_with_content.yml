@@ -4,7 +4,7 @@
   tasks:
   - name: Editing a file with content
     lineinfile:
-      path: "/home/orangepi/filewithcontent"
+      path: "/home/orangepi/filewithcontent.txt"
       line: This is a new line
       state: present
       create: true
