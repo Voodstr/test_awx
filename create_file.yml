@@ -1,6 +1,7 @@
-- name: Hello World Sample
+- name: CreateFile Sample
   hosts: all
   tasks:
-    - name: Hello Message
-      debug:
-        msg: "Hello World!"
+  - name: Creating an empty file
+    file:
+      path: "/root/ansible_teest"
+      state: touch
