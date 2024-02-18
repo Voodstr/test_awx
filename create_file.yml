@@ -3,6 +3,5 @@
   tasks:
   - name: Creating an empty file
     file:
-      path: "/root/ansible_teest"
-      line: 1
-      content: "kek"
+      path: "/home/orangepi/cretefiletest.txt"
+      state: touch
