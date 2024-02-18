@@ -1,0 +1,10 @@
+---
+
+- hosts: all
+  tasks:
+  - name: Editing a file with content
+    lineinfile:
+      path: "/home/orangepi/filewithcontent"
+      line: This is a new line
+      state: present
+      create: true
