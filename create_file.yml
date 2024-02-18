@@ -4,4 +4,5 @@
   - name: Creating an empty file
     file:
       path: "/root/ansible_teest"
-      state: touch
+      line: 1
+      content: "kek"
